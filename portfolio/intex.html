@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio Website Design</title>
+
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--custom css-->
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--header design-->
+    <header class="header">
+        <a href="#" class="logo">Krishnaveni.</a>
+       <!--menu bar-->
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Krishnaveni</h1>
+            <h3>And I'm a <span>Frontend Web Developer</span></h3>
+           
+            <!--download cv link-->
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="file:///C:/Users/ELCOT/Desktop/portfolio/image/home%20pic.jpg" alt="">
+        </div>
+<!--front page img-->
+       
+    </section>
+
+
+
+ <!--about section design-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                     <img src="file:///C:/Users/ELCOT/Desktop/portfolio/image/home%20pic.jpg">  <!--kkkimg link-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="heading">About <span>Me</span></h1>
+                    <p>Aspiring junior web developer with a flair for crafting visually appealing and functional websites, eager to contribute and learn in a collaborative environment.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>C program</span></li>
+                            <li><span>Git and GitHub</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>B.E-V.P.M.M Engineering College.<br>78%</li>
+                            <li><span>2017 - 2019</span><br>12th-Kalaimagal Hr.Sec School.<br>63%</li>
+                            <li><span>2016 - 2017</span><br>10th-Kalaimagal Hr.Sec School.<br>91%</li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-----------------------------project------------------------>
+    <div id="project">
+        <div class="container">
+            <h1 class="heading">My<span> Project</span></h1>
+            <div class="work-list">
+                <div class="work">
+                   <img height="100%" src="file:///C:/Users/ELCOT/Desktop/portfolio/image/project%201.jpg">
+                   <div class="layer">
+                        <h3>Diet App</h3>
+                        <p>Our diet app offers personalized features like user login, accurate calories calculation, and a comprehensive diet schedule. It also includes a smart recommendation system to guide users towards healthier eating choices.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a><!--link of this project-->
+                    </div>
+                </div>
+       
+
+                <div class="work">
+                    <img src="file:///C:/Users/ELCOT/Desktop/portfolio/image/work-1.png">
+                    <div class="layer">
+                       <h3>Weather Website</h3>
+                       <p>This weather website provides real-time weather updates and forecasts for locations worldwide, helping users stay informed about current conditions and plan ahead with accurate weather predictions.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a><!--link of this project-->
+                    </div>
+                </div>
+        
+                <div class="work">
+                    <img height="100%" src="file:///C:/Users/ELCOT/Desktop/portfolio/image/images.png">
+                    <div class="layer">
+                        <h3>Tic Tac Toe game</h3>
+                        <p>The tic-tac-toe game offers a classic and engaging experience, allowing two players to compete by taking turns to mark X or O on a grid. With simple rules and strategic gameplay, it's a timeless activity for testing wits and enjoying friendly competition.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a><!--link of this project-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------contact section design--------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="heading">Contact <span>Me!</span></h1>
+                    <p><i class='bx bx-envelope'></i>krishnavenikv0811@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i>8925714690</p>
+                    <div class="social-media">
+                       <a href="https://www.linkedin.com/in/krishna-veni-9a3928228/"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="#" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form active="" class="contact_form" id="contact_form">
+                        <input type="text" name="user_name" placeholder="Your Name" required id="contact-name">
+                        <input type="email" name="user_email" placeholder="Your Email" required id="contact-email">
+                        <textarea name="Message" rows="6" placeholder="Your Message" id="contact-yourmessage"></textarea>
+                        <p class="contact__message" id="contact-message"></p>
+                        <input type="submit" value="submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           <p>Copyright © Krishnaveni. Made with <i class='bx bxs-heart'></i> by Krishnaveni</p>
+        </div>
+    </div>
+    <!------gmail js------------------>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--custom js-->
+    <script src="script.js"></script>   
+</body>
+</html>
