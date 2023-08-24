@@ -30,7 +30,7 @@ body {
 
 section{
     min-height: 100vh;
-    padding-block-start: 10rem 9% 2rem;
+    padding-block-start: 1rem 6% 2rem;
 }
 .header{
     position: fixed;
@@ -65,18 +65,28 @@ section{
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
-} 
+}
 
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
 }
-
+.home-left {
+    height:70%;
+    margin-left: 9%;
+    padding-top: 13%;
+}
+.home-right {  
+    height:70%;
+    width: 50%;
+    padding-top: 3%;
+    padding-left: 3%;
+}
 .home {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
 }
 .home-img{
     flex-basis: 35%;
